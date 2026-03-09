@@ -1,0 +1,10 @@
+jupyter
+numpy
+pandas
+matplotlib
+seaborn
+scipy
+scikit-learn
+tslearn
+ruptures
+h5py
