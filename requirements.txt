@@ -8,3 +8,5 @@ scikit-learn
 tslearn
 ruptures
 h5py
+minisom
+geopandas
