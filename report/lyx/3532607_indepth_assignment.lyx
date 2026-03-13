@@ -1,0 +1,2110 @@
+#LyX 2.4 created this file. For more info see https://www.lyx.org/
+\lyxformat 620
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass extarticle
+\begin_preamble
+\usepackage{tikz}
+\usepackage{graphicx}
+
+\usepackage{pdflscape}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children no
+\language american
+\language_package default
+\inputencoding utf8
+\fontencoding auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement class
+\float_alignment class
+\paperfontsize 8
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine biblatex
+\cite_engine_type authoryear
+\biblio_style plain
+\biblatex_bibstyle apa
+\biblatex_citestyle authoryear
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_formatted_ref 0
+\use_minted 0
+\use_lineno 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tablestyle default
+\tracking_changes false
+\output_changes false
+\change_bars false
+\postpone_fragile_content true
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagenumbering{gobble}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+% Cover page with a PNG image
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}[remember picture,
+ overlay]
+\end_layout
+
+\begin_layout Plain Layout
+
+    % Include PNG image as the background
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+node[anchor=center] at (current page.center) 
+\end_layout
+
+\begin_layout Plain Layout
+
+      {
+\backslash
+includegraphics[width=20cm]{1.png}};
+  % Adjust the path and width as needed
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+node at ([xshift=-4.5cm,
+ yshift=22cm]current page.south east) 
+\end_layout
+
+\begin_layout Plain Layout
+
+      {
+\backslash
+fontsize{20}{1} 
+\backslash
+selectfont 
+\backslash
+parbox{20cm}{
+\backslash
+bfseries 
+\backslash
+normalfont Space 
+\backslash
+& Time}};
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+node at ([xshift=-4.5cm,
+ yshift=21cm]current page.south east) 
+\end_layout
+
+\begin_layout Plain Layout
+
+      {
+\backslash
+fontsize{20}{1} 
+\backslash
+selectfont 
+\backslash
+parbox{20cm}{
+\backslash
+bfseries 
+\backslash
+normalfont In-depth Topic Assignment}};
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+node at ([xshift=-8cm,
+ yshift=14cm]current page.south east) 
+\end_layout
+
+\begin_layout Plain Layout
+
+      {
+\backslash
+fontsize{30}{1} 
+\backslash
+selectfont
+\backslash
+bfseries 
+\backslash
+parbox{13.42cm}{Clustering of Point Data}};
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+node at ([xshift=-4.5cm,
+ yshift=7cm]current page.south east) 
+\end_layout
+
+\begin_layout Plain Layout
+
+      {
+\backslash
+fontsize{20}{1} 
+\backslash
+selectfont 
+\backslash
+parbox{20cm}{
+\backslash
+bfseries Armaan Farooqui (3532607)}};
+  
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+node at ([xshift=-4.5cm,
+ yshift=6cm]current page.south east) 
+\end_layout
+
+\begin_layout Plain Layout
+
+      {
+\backslash
+fontsize{20}{1} 
+\backslash
+selectfont 
+\backslash
+parbox{20cm}{
+\backslash
+bfseries 
+\backslash
+normalfont March 2026}};
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+node at ([xshift=-8cm,
+ yshift=1cm]current page.south east) 
+\end_layout
+
+\begin_layout Plain Layout
+
+      {
+\backslash
+fontsize{20}{1} 
+\backslash
+selectfont 
+\backslash
+parbox{13cm}{
+\backslash
+bfseries 
+\backslash
+normalfont Faculty of Geoinformation Science and Earth Observation}};
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+node[anchor=north west,
+ xshift=0.5cm,
+ yshift=-1cm] at (current page.north west) 
+\end_layout
+
+\begin_layout Plain Layout
+
+      {
+\backslash
+includegraphics[width=9cm]{ut_logo.png}};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+% Remove page number for the cover page
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+thispagestyle{empty}
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+clearpage
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FloatList table
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FloatList figure
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagenumbering{arabic}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{page}{1}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Standard
+The COVID-19 pandemic spread across countries and regions through complex spatial and temporal processes.
+ In the Netherlands,
+ the epidemic unfolded unevenly across municipalities,
+ with some areas experiencing early outbreaks while others saw delayed increases in infection counts,
+ a pattern observed in many countries during the COVID-19 pandemic (Kraemer et al.,
+ 2020).
+ Understanding how such epidemics propagate across space is important for evaluating public health responses and for improving epidemiological modelling.
+ One concept frequently used to describe the spatial spread of innovations and diseases is hierarchical diffusion,
+ where processes initially spread through highly connected urban centres before gradually reaching smaller or more peripheral regions (Hägerstrand,
+ 1967;
+ Rogers,
+ 2003).
+ 
+\end_layout
+
+\begin_layout Standard
+Hierarchical diffusion is particularly relevant for infectious diseases because human mobility networks and population density strongly influence transmission dynamics (Balcan et al.,
+ 2009;
+ Brockmann & Helbing,
+ 2013).
+ Large cities often act as hubs of connectivity,
+ with greater international travel,
+ higher population densities,
+ and more intensive social interaction.
+ 
+\end_layout
+
+\begin_layout Standard
+As a result,
+ epidemics may first intensify in these urban areas before spreading outward to smaller municipalities.
+ Detecting such spatial patterns requires analytical approaches capable of comparing epidemic trajectories across many locations simultaneously.
+ The Netherlands provides a useful case study for examining such processes because its dense urban network and high levels of regional mobility create strong spatial connectivity between municipalities.
+ 
+\end_layout
+
+\begin_layout Standard
+Time-series analysis provides a natural framework for studying epidemic dynamics.
+ Municipality-level COVID-19 case counts form temporal sequences that reflect the progression of infection waves over time.
+ However,
+ comparing hundreds of time series directly is challenging because epidemic curves may differ in magnitude,
+ timing,
+ and noise levels.
+ Time-series clustering methods provide a useful solution by grouping municipalities that exhibit similar temporal epidemic patterns (Liao,
+ 2005).
+ By identifying clusters of similar epidemic trajectories,
+ it becomes possible to detect typical temporal profiles,
+ such as early-peaking,
+ intermediate,
+ or delayed epidemic patterns.
+ When combined with spatial mapping of cluster membership,
+ these patterns can reveal whether epidemics spread through hierarchical or geographically structured diffusion processes.
+ 
+\end_layout
+
+\begin_layout Standard
+While many studies analyse national epidemic dynamics,
+ fewer studies examine how municipality-level epidemic trajectories cluster temporally and spatially.
+ Understanding these local patterns is important for identifying how epidemics propagate through regional mobility and settlement networks.
+ 
+\end_layout
+
+\begin_layout Standard
+In this project,
+ clustering techniques are applied to municipality-level COVID-19 time series from two different sources.
+ The first dataset consists of observed case counts reported by the Dutch National Institute for Public Health and the Environment (RIVM).
+ These data provide a record of how the epidemic evolved across Dutch municipalities over multiple waves of infection.
+ The second dataset is generated by an agent-based model (ABM) of COVID-19 transmission.
+ Agent-based models simulate disease spread by representing individuals and their interactions,
+ allowing researchers to explore how behavioural patterns and contact networks influence epidemic outcomes (Epstein,
+ 2009).
+ The ABM produces simulated infection counts at the municipality level,
+ which can be analysed in a manner similar to the real data.
+ 
+\end_layout
+
+\begin_layout Standard
+Comparing the observed RIVM data with the simulated ABM output provides an opportunity to evaluate how well the model reproduces real epidemic dynamics.
+ If the model realistically captures transmission processes and spatial interactions,
+ the temporal clustering patterns observed in the simulation should resemble those found in the real data.
+ Conversely,
+ substantial differences between the two datasets may indicate limitations in the model structure or assumptions.
+ Such comparisons are therefore useful for assessing the realism and explanatory power of epidemiological simulations.
+ 
+\end_layout
+
+\begin_layout Standard
+To investigate these issues,
+ the analysis follows a reproducible workflow that includes data restructuring,
+ preprocessing,
+ time-series segmentation,
+ and clustering of municipality-level epidemic trajectories.
+ The clustering results are then interpreted both temporally and spatially in order to identify possible diffusion patterns.
+ Finally,
+ the observed and simulated clustering structures are compared to evaluate the extent to which the model reproduces the spatial and temporal organisation of the real epidemic.
+ 
+\end_layout
+
+\begin_layout Standard
+This study is guided by three research questions:
+ 
+\end_layout
+
+\begin_layout Enumerate
+What temporal patterns appear in municipality-level COVID-19 time series in the Netherlands?
+\end_layout
+
+\begin_layout Enumerate
+Do RIVM observations and ABM simulations produce similar or different clustering structures?
+\end_layout
+
+\begin_layout Enumerate
+Do the resulting clusters provide evidence of hierarchical diffusion in the spread of COVID-19 across municipalities?
+\end_layout
+
+\begin_layout Standard
+By addressing these questions,
+ the analysis aims to improve understanding of spatial epidemic dynamics and to assess the extent to which agent-based simulations can reproduce the temporal and geographical patterns observed in real epidemic data.
+ 
+\end_layout
+
+\begin_layout Section
+Data and Study Material
+\end_layout
+
+\begin_layout Subsection
+RIVM Data
+\end_layout
+
+\begin_layout Standard
+The first dataset used in this study consists of municipality-level COVID-19 case counts reported by the Dutch National Institute for Public Health and the Environment (RIVM).
+ These data provide an empirical record of the progression of the COVID-19 epidemic across municipalities in the Netherlands and allow construction of epidemic trajectories for individual locations.
+ 
+\end_layout
+
+\begin_layout Standard
+The original RIVM data are provided in a long tabular format in which each row corresponds to a municipality–date combination.
+ For time-series analysis and clustering,
+ the data were restructured into a municipality × time matrix,
+ where each row represents a municipality and each column corresponds to a time step in the epidemic.
+ Each row therefore forms a time series describing the evolution of COVID-19 cases for that municipality.
+ 
+\end_layout
+
+\begin_layout Standard
+The dataset covers the main period of the epidemic in the Netherlands,
+ beginning in February 2020 and extending into 2023.
+ After restructuring and aggregation,
+ the time series contain approximately 150 weekly observations per municipality.
+ Weekly aggregation was used to reduce reporting noise and ensure comparability with the temporal resolution used in the simulation outputs.
+ 
+\end_layout
+
+\begin_layout Standard
+Following preprocessing,
+ the dataset includes 342 municipalities with complete or near-complete time series used for clustering analysis of observed epidemic dynamics.
+ 
+\end_layout
+
+\begin_layout Subsection
+ABM Simulation Data
+\end_layout
+
+\begin_layout Standard
+The second dataset consists of outputs generated by an agent-based model (ABM) simulating the spread of COVID-19 in the Netherlands.
+ Agent-based models represent individuals as agents interacting within a simulated environment,
+ allowing epidemic dynamics to emerge from behavioural interactions and contact patterns.
+ Such models are commonly used to explore the effects of interventions,
+ mobility patterns,
+ and contact structures on disease transmission.
+ 
+\end_layout
+
+\begin_layout Standard
+In the simulation used for this study,
+ infection counts are recorded at the municipality level over time.
+ Similar to the RIVM data,
+ the ABM output was transformed into a municipality × time matrix,
+ where each municipality is represented by a time series of simulated infection counts.
+ 
+\end_layout
+
+\begin_layout Standard
+The ABM dataset contains approximately 396 municipalities,
+ reflecting the spatial resolution used in the simulation environment.
+ Simulation outputs provide infection counts at regular time intervals and were aggregated to weekly values to ensure comparability with the RIVM dataset.
+ This step allows both datasets to be analysed using the same temporal resolution.
+ 
+\end_layout
+
+\begin_layout Standard
+The resulting time series capture the modelled epidemic trajectory for each municipality and enable comparison between observed epidemic patterns and simulated dynamics.
+ 
+\end_layout
+
+\begin_layout Subsection
+Analytical Workflow
+\end_layout
+
+\begin_layout Standard
+To analyse and compare the observed and simulated epidemic dynamics,
+ a structured analytical workflow was developed.
+ The workflow transforms raw data into a form suitable for time-series clustering and spatial interpretation.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+alignment center
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Box Boxed
+position "c"
+hor_pos "c"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "100text%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.5pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "default"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename /home/lorem/Documents/github/space_time_individual/figures/Fig_1.png
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Analytical workflow
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Figure 1 illustrates the main stages of the analysis pipeline.
+ The workflow begins with the two data sources,
+ RIVM observations and ABM simulation outputs.
+ These datasets are first restructured into municipality × time matrices.
+ The time series are then preprocessed through smoothing and normalisation in order to reduce noise and emphasise temporal patterns.
+ 
+\end_layout
+
+\begin_layout Standard
+Next,
+ the epidemic timeline is segmented into major waves to support interpretation of different epidemic phases.
+ Time-series clustering methods are then applied to group municipalities with similar epidemic trajectories.
+ The resulting clusters are analysed both temporally and spatially,
+ allowing the identification of diffusion patterns and regional epidemic structures.
+ Finally,
+ clustering results from the RIVM and ABM datasets are compared in order to evaluate how well the simulation reproduces the observed epidemic dynamics.
+ 
+\end_layout
+
+\begin_layout Standard
+Table 1 summarises the key characteristics of the two datasets used in the analysis.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+alignment center
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Dataset overview
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tabular}{rlrrll}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+toprule
+\end_layout
+
+\begin_layout Plain Layout
+
+S.N.
+ & Dataset & Municipalities & Time steps & Date range & Temporal resolution 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+midrule
+\end_layout
+
+\begin_layout Plain Layout
+
+1 & RIVM & 344 & 84 & Mar 2020 – Oct 2021 & Weekly 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+2 & ABM & 396 & 79 & Simulation period & Weekly 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+bottomrule
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tabular}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This overview highlights the similarities in temporal structure between the datasets,
+ which enables meaningful comparison of clustering results across observed and simulated epidemic time series.
+ 
+\end_layout
+
+\begin_layout Section
+Methodology
+\end_layout
+
+\begin_layout Standard
+All data preprocessing,
+ clustering procedures,
+ and visualisations were implemented in Python and documented in the accompanying analysis notebook.
+ 
+\end_layout
+
+\begin_layout Subsection
+Data Architecture and Preprocessing
+\end_layout
+
+\begin_layout Standard
+To enable comparison between observed and simulated epidemic dynamics,
+ both datasets were organised into a consistent municipality × time matrix structure.
+ In this format,
+ each row represents a municipality and each column represents a time step,
+ allowing infections to be analysed as time series for each spatial unit.
+ 
+\end_layout
+
+\begin_layout Standard
+The original RIVM dataset was provided in long format,
+ where each record contained a municipality identifier,
+ date,
+ and reported number of COVID-19 cases.
+ For time-series analysis,
+ the data were reshaped using a pivot operation so that municipalities formed the rows and weekly time steps formed the columns.
+ This produced a matrix in which each row represents the epidemic trajectory of a municipality across the observation period.
+ 
+\end_layout
+
+\begin_layout Standard
+The ABM simulation output contained infection counts generated by the agent-based model for multiple municipalities.
+ Although its structure differed slightly from the observational dataset,
+ it was reorganised into the same municipality × time matrix to ensure compatibility with the analytical pipeline used for the RIVM data.
+ 
+\end_layout
+
+\begin_layout Standard
+After restructuring,
+ preprocessing was applied to reduce noise and emphasise epidemic patterns.
+ Weekly infection counts may fluctuate because of reporting delays or stochastic simulation effects.
+ A rolling mean smoothing procedure was therefore applied to each municipality time series to reduce short-term variability while preserving overall epidemic trends.
+ 
+\end_layout
+
+\begin_layout Standard
+Finally,
+ the time series were normalised using z-score standardisation.
+ This ensures clustering focuses on the temporal shape of epidemic trajectories rather than differences in magnitude between municipalities.
+ 
+\end_layout
+
+\begin_layout Subsection
+Segmentation
+\end_layout
+
+\begin_layout Standard
+Epidemic processes often occur in multiple waves rather than as a single continuous outbreak.
+ To account for this structure,
+ the analysis incorporated temporal segmentation based on epidemic waves.
+ 
+\end_layout
+
+\begin_layout Standard
+Wave detection was performed using the national epidemic curve,
+ obtained by aggregating infection counts across all municipalities.
+ The national curve provides a high-level representation of the overall epidemic progression and makes major peaks and troughs in infection levels clearly visible.
+ 
+\end_layout
+
+\begin_layout Standard
+Using the smoothed national curve,
+ major epidemic phases were identified by examining the timing of peaks and transitions between periods of rising and declining case numbers.
+ These turning points were used to define analysis segments corresponding to different epidemic waves.
+ Each segment therefore represents a period during which the epidemic followed a relatively coherent temporal pattern across the country.
+ 
+\end_layout
+
+\begin_layout Standard
+Segmenting the epidemic into waves serves two purposes.
+ First,
+ it allows clustering algorithms to focus on specific epidemic phases,
+ which may reveal patterns that are less visible when analysing the entire time series.
+ Second,
+ segmentation makes it possible to compare how municipalities behaved during different waves,
+ highlighting variations in the timing or intensity of local outbreaks.
+ 
+\end_layout
+
+\begin_layout Standard
+Both the full time series and wave-based segments were considered in the analysis to evaluate how segmentation affects clustering results and interpretability.
+ 
+\end_layout
+
+\begin_layout Subsection
+Clustering Methods
+\end_layout
+
+\begin_layout Standard
+To identify groups of municipalities with similar epidemic trajectories,
+ two time-series clustering approaches were considered:
+ K-Shape clustering and Self-Organising Maps (SOM).
+ 
+\end_layout
+
+\begin_layout Standard
+K-Shape clustering is specifically designed for time-series data and uses shape-based similarity measures to group time series according to the form of their temporal patterns.
+ The method aligns time series by maximising the similarity of their shapes,
+ making it particularly suitable for analysing epidemic curves where the timing and structure of peaks are more important than absolute magnitude.
+ K-Shape therefore emphasises similarities in the progression of epidemic waves across municipalities.
+ 
+\end_layout
+
+\begin_layout Standard
+In addition to K-Shape,
+ Self-Organising Maps (SOM) were explored as an alternative clustering approach.
+ SOM is an unsupervised neural network algorithm that projects high-dimensional data onto a lower-dimensional grid while preserving topological relationships between observations.
+ In the context of time-series analysis,
+ SOM can reveal clusters of municipalities with similar temporal patterns while also providing an interpretable visual representation of the clustering structure.
+ 
+\end_layout
+
+\begin_layout Standard
+The two clustering methods rely on different similarity concepts.
+ K-Shape focuses on shape-based similarity,
+ typically derived from cross-correlation between time series,
+ while SOM commonly uses Euclidean distance in the transformed feature space.
+ Because Euclidean distance is sensitive to magnitude differences,
+ the z-score normalisation step described earlier was important to ensure that clustering primarily reflected temporal patterns rather than absolute case counts.
+ 
+\end_layout
+
+\begin_layout Standard
+By applying different clustering approaches and similarity measures,
+ the analysis evaluates how methodological choices influence the identification of epidemic patterns.
+ 
+\end_layout
+
+\begin_layout Subsection
+Cluster Selection and Visualisation
+\end_layout
+
+\begin_layout Standard
+An important step in clustering analysis is determining the appropriate number of clusters.
+ Rather than fixing this number in advance,
+ several candidate solutions were tested with cluster numbers ranging from three to six.
+ This range balances the need to identify meaningful patterns while avoiding overly fragmented cluster structures.
+ 
+\end_layout
+
+\begin_layout Standard
+To evaluate these candidate solutions,
+ both quantitative and qualitative criteria were used.
+ The silhouette score,
+ a commonly used internal evaluation metric,
+ was applied to measure the separation between clusters and the cohesion of observations within each cluster.
+ Higher silhouette scores indicate better-defined clusters.
+ 
+\end_layout
+
+\begin_layout Standard
+However,
+ numerical metrics alone are not always sufficient for time-series clustering,
+ particularly in epidemiological applications where interpretability is important.
+ Cluster solutions were therefore also evaluated based on the interpretability of temporal profiles.
+ Centroid curves were examined to determine whether clusters represented distinct epidemic trajectories,
+ such as early,
+ intermediate,
+ or late epidemic peaks.
+ 
+\end_layout
+
+\begin_layout Standard
+Spatial coherence was also considered.
+ After clustering,
+ municipalities were mapped to assess whether clusters displayed meaningful geographic patterns,
+ such as concentrations in urban regions or peripheral areas.
+ 
+\end_layout
+
+\begin_layout Standard
+By combining silhouette scores,
+ centroid interpretability,
+ and spatial coherence,
+ a final clustering configuration was selected for both the RIVM and ABM datasets.
+ 
+\end_layout
+
+\begin_layout Section
+Results
+\end_layout
+
+\begin_layout Subsection
+Preprocessing and Segmentation Results
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+alignment center
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Box Boxed
+position "c"
+hor_pos "c"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "100text%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.5pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "default"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename /home/lorem/Documents/github/space_time_individual/figures/figure_2.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+National epidemic curve with wave boundaries
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Figure 2 shows the national COVID-19 epidemic curve derived by aggregating municipality-level case counts across the Netherlands.
+ The curve illustrates several distinct epidemic waves between early 2020 and late 2021.
+ Based on the national trajectory,
+ wave boundaries were defined to segment the epidemic into major phases of transmission.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+alignment center
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Box Boxed
+position "c"
+hor_pos "c"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "100text%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.5pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "default"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename /home/lorem/Documents/github/space_time_individual/figures/figure_3.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Preprocessing transformations for example municipality (Amsterdam)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The effect of these preprocessing transformations is illustrated in Figure 3,
+ which shows an example municipality (Amsterdam) under different representations,
+ including z-score normalisation,
+ min–max scaling,
+ and a log-smoothed transformation.
+ These transformations illustrate how preprocessing alters the scale and shape of municipality epidemic trajectories.
+ 
+\end_layout
+
+\begin_layout Subsection
+Clustering Results for RIVM
+\end_layout
+
+\begin_layout Standard
+Clustering of municipality-level COVID-19 time series from the RIVM dataset revealed several distinct epidemic trajectories across the Netherlands.
+ These clusters represent groups of municipalities that experienced similar temporal patterns in reported infections.
+ The clustering analysis highlights differences in the timing and intensity of epidemic waves across regions.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+alignment center
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Box Boxed
+position "c"
+hor_pos "c"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "100text%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.5pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "default"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename /home/lorem/Documents/github/space_time_individual/figures/figure_4.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+RIVM cluster centroid curves
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Figure 4 presents the centroid curves for the clusters identified from the RIVM time series.
+ Each centroid represents the average temporal trajectory of municipalities assigned to that cluster after preprocessing and normalisation using a z-score transformation.
+ The centroid curves show clear differences in the timing and magnitude of epidemic peaks between clusters.
+ While all clusters exhibit the major national waves,
+ their peak timing and relative intensity vary.
+ One cluster displays stronger peaks during the mid-phase waves of the epidemic,
+ whereas another shows relatively delayed or more moderate peaks.
+ These differences indicate temporal heterogeneity in how municipalities experienced successive epidemic waves.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+alignment center
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Box Boxed
+position "c"
+hor_pos "c"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "100text%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.5pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "default"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename /home/lorem/Documents/github/space_time_individual/figures/figure_5.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+RIVM spatial cluster map
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The spatial distribution of the clusters is shown in Figure 5.
+ Municipalities belonging to different clusters are distributed across the Netherlands,
+ with some regional groupings visible but no strictly uniform geographic separation.
+ Certain clusters appear more common in parts of the western and central Netherlands,
+ while others are more frequently observed in northern and southern municipalities.
+ However,
+ the spatial distribution remains mixed,
+ with neighbouring municipalities sometimes belonging to different clusters.
+ 
+\end_layout
+
+\begin_layout Subsection
+Clustering Results for ABM
+\end_layout
+
+\begin_layout Standard
+Clustering of the municipality-level time series generated by the agent-based model (ABM) revealed several epidemic trajectory patterns across the simulated municipalities.
+ The clustering groups municipalities that exhibit similar temporal dynamics in infection counts throughout the simulation period.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+alignment center
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Box Boxed
+position "c"
+hor_pos "c"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "100text%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.5pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "default"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename /home/lorem/Documents/github/space_time_individual/figures/figure_6.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+ABM cluster centroid curves
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Figure 6 presents the centroid curves for the clusters identified from the ABM time series.
+ Each centroid represents the average temporal trajectory of municipalities assigned to a cluster after preprocessing and normalisation using a z-score transformation.
+ The centroid curves indicate that the simulated epidemic waves occur at broadly similar times across clusters.
+ The initial epidemic peak appears highly synchronised across all clusters,
+ occurring within a narrow time window early in the simulation.
+ Later waves also occur within comparable periods,
+ although modest differences in peak height and slight shifts in timing are visible between clusters.
+ 
+\end_layout
+
+\begin_layout Standard
+The simulated epidemic trajectories follow a relatively consistent temporal evolution across municipalities.
+ Differences between clusters primarily reflect variation in epidemic intensity rather than large differences in the timing of infection waves.
+ As a result,
+ the temporal variation between clusters is relatively limited.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+alignment center
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Box Boxed
+position "c"
+hor_pos "c"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "100text%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.5pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "default"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename /home/lorem/Documents/github/space_time_individual/figures/figure_7.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+ABM spatial cluster map
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The spatial distribution of the ABM clusters is shown in Figure 7.
+ The spatial cluster map indicates that municipalities belonging to different clusters are distributed across the Netherlands without a clear or continuous geographic ordering.
+ Although some clusters appear more common in particular regions,
+ municipalities from different clusters are interspersed throughout the country.
+ 
+\end_layout
+
+\begin_layout Subsection
+Comparative Analysis
+\end_layout
+
+\begin_layout Standard
+The clustering results obtained from the RIVM and ABM datasets reveal important differences in the temporal and spatial structure of epidemic trajectories across municipalities.
+ While both datasets produce identifiable trajectory clusters,
+ the patterns observed in the empirical and simulated data differ in several key aspects.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+alignment center
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Box Boxed
+position "c"
+hor_pos "c"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "100text%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.5pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "default"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename /home/lorem/Documents/github/space_time_individual/figures/figure_8.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Comparison of epidemic trajectory clusters:
+ RIVM and ABM 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Figure 8 presents a comparison of the centroid curves derived from the RIVM and ABM clustering analyses.
+ The centroid curves for the RIVM data exhibit clear variation in the timing and magnitude of epidemic peaks between clusters.
+ Although the major national waves are present across all clusters,
+ the timing of peak infection intensity differs across groups of municipalities.
+ Some clusters show earlier increases in case numbers during particular waves,
+ while others display delayed peaks or more moderate trajectories.
+ This staggered structure indicates substantial temporal heterogeneity in the progression of the epidemic across municipalities.
+ 
+\end_layout
+
+\begin_layout Standard
+In contrast,
+ the centroid curves derived from the ABM simulation show a more synchronised pattern.
+ The major epidemic peaks appear within similar time windows across clusters,
+ with only moderate variation in peak intensity.
+ While some clusters exhibit slightly higher or lower peaks,
+ the overall timing of epidemic waves remains largely aligned across municipalities.
+ This suggests that the simulated epidemic dynamics evolve in a more uniform manner than the observed trajectories in the empirical data.
+ 
+\end_layout
+
+\begin_layout Standard
+Spatial patterns also differ between the two datasets.
+ The RIVM clustering results show partial regional structure,
+ with certain clusters appearing more frequently in particular parts of the country.
+ By contrast,
+ the ABM spatial clusters display a more mixed distribution across the Netherlands,
+ with municipalities from different clusters appearing interspersed throughout the map.
+ This indicates weaker geographic organisation in the simulated epidemic trajectories.
+ 
+\end_layout
+
+\begin_layout Standard
+Table 2 summarises the key differences observed between the clustering outcomes for the two datasets.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+alignment center
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Cluster comparison summary
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tabularx}{
+\backslash
+textwidth}{r l X X X}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+toprule
+\end_layout
+
+\begin_layout Plain Layout
+
+S.N.
+ & Aspect & RIVM & ABM & Interpretation 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+midrule
+\end_layout
+
+\begin_layout Plain Layout
+
+1 & Temporal patterns & Distinct early--late cluster trajectories & Similar peak timing across clusters & Real epidemic shows stronger temporal heterogeneity 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+2 & Spatial concentration & Some regional concentration of clusters & Mixed spatial distribution & Weaker geographic ordering in ABM 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+3 & Hierarchical diffusion & Patterns consistent with hierarchical diffusion & Limited evidence of diffusion structure & Model spreads infection more uniformly 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+bottomrule
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tabularx}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Sensitivity Analysis
+\end_layout
+
+\begin_layout Standard
+To evaluate the robustness of the clustering design,
+ a sensitivity analysis was conducted using alternative preprocessing strategies applied to the epidemic time series.
+ The objective was to assess how different temporal representations influence the quality and interpretability of trajectory clusters.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+alignment center
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Sensitivity analysis results
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tabularx}{
+\backslash
+textwidth}{r l X X X}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+toprule
+\end_layout
+
+\begin_layout Plain Layout
+
+S.N.
+ & Setting & Result quality & Comment 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+midrule
+\end_layout
+
+\begin_layout Plain Layout
+
+1 & Raw full-series clustering & Weak & Noise in raw case counts reduces cluster separation 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+2 & Smoothed full-series clustering & Moderate & Smoothing highlights epidemic wave structure 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+3 & Wave-segmented clustering & Strong & Wave segmentation improves phase-specific cluster separation 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+bottomrule
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tabularx}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Table 3 summarises the results of this analysis.
+ Three configurations were tested:
+ clustering using the raw full time series,
+ clustering after temporal smoothing,
+ and clustering based on segmented epidemic waves.
+ 
+\end_layout
+
+\begin_layout Standard
+Clustering performed on the raw full series produced weak results.
+ The trajectories contained substantial short-term fluctuations and reporting noise,
+ which reduced the clarity of cluster separation and made centroid patterns difficult to interpret.
+ 
+\end_layout
+
+\begin_layout Standard
+Applying temporal smoothing improved the results by reducing high-frequency variability and revealing the main epidemic trends.
+ The resulting clusters showed clearer trajectory shapes and more stable centroid curves.
+ 
+\end_layout
+
+\begin_layout Standard
+The strongest clustering performance was obtained when the time series were segmented into epidemic waves before clustering.
+ This approach isolates major phases of the epidemic and reduces noise between waves,
+ producing the clearest separation between trajectory groups.
+ 
+\end_layout
+
+\begin_layout Standard
+Overall,
+ the analysis indicates that wave segmentation provides the most robust representation of epidemic dynamics for clustering.
+ 
+\end_layout
+
+\begin_layout Section
+Discussion
+\end_layout
+
+\begin_layout Standard
+This section interprets the clustering results in relation to spatial diffusion theory,
+ epidemic modelling,
+ and methodological considerations.
+ 
+\end_layout
+
+\begin_layout Subsection
+Evidence for Hierarchical Diffusion
+\end_layout
+
+\begin_layout Standard
+The clustering analysis of the RIVM dataset reveals differences in the timing and structure of epidemic trajectories across municipalities.
+ The centroid curves show that epidemic peaks did not occur simultaneously across the country.
+ Instead,
+ clusters exhibit staggered peaks,
+ with some municipalities experiencing earlier increases in infection counts while others show delayed trajectories.
+ This pattern indicates temporal heterogeneity in how the epidemic progressed across municipalities.
+ 
+\end_layout
+
+\begin_layout Standard
+Such staggered dynamics are consistent with hierarchical diffusion.
+ In this framework,
+ infections initially intensify in highly connected urban centres that function as transmission hubs within mobility networks.
+ From these centres,
+ the epidemic spreads outward through human movement and interaction,
+ gradually reaching smaller settlements.
+ 
+\end_layout
+
+\begin_layout Standard
+The spatial distribution of clusters supports this interpretation.
+ Earlier-peaking clusters appear more frequently in the highly urbanised Randstad region,
+ where mobility connectivity and population density are high,
+ while later-peaking clusters occur more often in peripheral municipalities.
+ These results suggest epidemic propagation followed patterns consistent with hierarchical diffusion through urban connectivity networks.
+ 
+\end_layout
+
+\begin_layout Subsection
+Real and Simulated Epidemic Structure
+\end_layout
+
+\begin_layout Standard
+Comparison of the clustering results reveals important differences between the empirical epidemic patterns observed in the RIVM data and those produced by the agent-based model.
+ In the RIVM dataset,
+ the centroid curves display clear variation in the timing of epidemic peaks between clusters.
+ Different groups of municipalities experienced epidemic waves at different moments,
+ producing a staggered temporal pattern across the country and indicating substantial temporal heterogeneity in epidemic progression.
+ 
+\end_layout
+
+\begin_layout Standard
+In contrast,
+ the centroid curves derived from the ABM simulation show a more synchronised structure.
+ Epidemic peaks occur within similar time windows across clusters,
+ with only modest variation in peak magnitude.
+ Spatial patterns are also weaker,
+ with clusters distributed more evenly across municipalities rather than forming distinct regional groupings.
+ 
+\end_layout
+
+\begin_layout Standard
+One possible explanation is that the simulation assumes relatively homogeneous mobility or contact structures between municipalities.
+ If interaction rates or mobility connections are represented too uniformly,
+ infections can propagate through the network more evenly,
+ producing synchronised epidemic waves.
+ Simplified assumptions about contact mixing or demographic variation may further reduce local differences in epidemic timing.
+ 
+\end_layout
+
+\begin_layout Standard
+These results suggest that while the ABM captures general epidemic waves,
+ it may underrepresent regional diffusion dynamics observed in real epidemic data.
+ 
+\end_layout
+
+\begin_layout Subsection
+Methodological Implications
+\end_layout
+
+\begin_layout Standard
+Methodological choices influenced the interpretability of the clustering results.
+ First,
+ smoothing of municipality-level time series reduced short-term fluctuations caused by reporting delays and local variability.
+ Weekly COVID-19 case counts often contain noise that obscures epidemic trends,
+ and applying a rolling mean filter made the broader structure of epidemic waves clearer.
+ 
+\end_layout
+
+\begin_layout Standard
+Normalisation using a z-score transformation was also essential.
+ Municipalities differ greatly in population size and case counts,
+ which can dominate clustering results.
+ Standardisation ensured that clustering focused on the timing and shape of epidemic trajectories rather than magnitude.
+ 
+\end_layout
+
+\begin_layout Standard
+Temporal segmentation of the epidemic into major waves further improved clustering clarity.
+ Analysing epidemic phases allowed the clustering algorithm to detect differences in municipal behaviour during specific waves.
+ 
+\end_layout
+
+\begin_layout Standard
+Finally,
+ the K-Shape algorithm proved suitable because it groups time series based on similarity in temporal shape,
+ making it appropriate for analysing epidemic curves.
+ 
+\end_layout
+
+\begin_layout Subsection
+Limitations
+\end_layout
+
+\begin_layout Standard
+Several limitations should be considered when interpreting these results.
+ First,
+ early stages of the COVID-19 pandemic in the Netherlands were affected by limited testing capacity.
+ Consequently,
+ reported RIVM case counts likely underestimate true infection levels during initial waves,
+ which may influence the observed trajectories.
+ 
+\end_layout
+
+\begin_layout Standard
+Second,
+ vaccination dynamics were not incorporated in the analysis.
+ Increasing vaccination coverage during later phases of the pandemic may have influenced infection patterns and the timing of later waves.
+ 
+\end_layout
+
+\begin_layout Standard
+Third,
+ the analysis was conducted at the municipality level.
+ Aggregating data at this scale may conceal finer spatial transmission patterns within municipalities.
+ 
+\end_layout
+
+\begin_layout Standard
+Finally,
+ clustering outcomes depend on the chosen number of clusters.
+ Different values of k could produce alternative grouping structures and different interpretations of epidemic trajectories.
+ 
+\end_layout
+
+\begin_layout Subsection
+Recommendations
+\end_layout
+
+\begin_layout Standard
+Future analyses of epidemic diffusion could be improved in several ways.
+ Using population-adjusted incidence rates instead of raw case counts would improve comparability between municipalities,
+ while incorporating vaccination dynamics would better capture changing population susceptibility.
+ 
+\end_layout
+
+\begin_layout Standard
+Methodologically,
+ similarity measures such as Dynamic Time Warping (DTW) and network-based clustering could better represent temporal shifts and spatial connectivity.
+ 
+\end_layout
+
+\begin_layout Standard
+From a modelling perspective,
+ incorporating mobility networks and greater spatial heterogeneity in the ABM may produce more realistic regional diffusion patterns.
+ 
+\end_layout
+
+\begin_layout Section
+Conclusion
+\end_layout
+
+\begin_layout Standard
+This study analysed municipality-level COVID-19 time series in the Netherlands using time-series clustering to investigate spatial diffusion patterns and compare empirical epidemic data with agent-based model (ABM) simulations.
+ 
+\end_layout
+
+\begin_layout Standard
+The clustering results from the RIVM dataset revealed clear temporal heterogeneity in epidemic trajectories across municipalities.
+ Distinct clusters showed differences in the timing and intensity of epidemic waves,
+ with some municipalities experiencing earlier peaks than others.
+ The spatial distribution of these clusters suggests that earlier trajectories occurred more often in highly connected urban regions,
+ while later trajectories appeared more frequently in peripheral municipalities.
+ These patterns are consistent with hierarchical diffusion,
+ in which infections spread progressively from major urban centres to smaller settlements.
+ 
+\end_layout
+
+\begin_layout Standard
+The ABM simulation reproduced some epidemic dynamics but generated more synchronised trajectories across municipalities than those observed in the empirical data.
+ Cluster centroid curves indicate that epidemic peaks occurred within similar time windows across simulated clusters,
+ reflecting weaker temporal variation than in the empirical data.
+ 
+\end_layout
+
+\begin_layout Standard
+Methodologically,
+ the results show that preprocessing strongly influences clustering outcomes.
+ Wave-based segmentation combined with smoothing and z-score normalisation produced the most interpretable trajectory clusters by highlighting epidemic wave structure while reducing noise.
+ 
+\end_layout
+
+\begin_layout Standard
+These findings highlight the importance of incorporating realistic mobility structures and spatial heterogeneity when using agent-based models to simulate epidemic diffusion.
+ 
+\end_layout
+
+\begin_layout Section
+Use of AI
+\end_layout
+
+\begin_layout Standard
+ChatGPT was used for debugging and commenting the Jupyter Notebook code,
+ and for removing spelling and grammar errors in the report.
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+btprint "btPrintAll"
+bibfiles "/home/lorem/Documents/github/space_time_individual/references/references"
+options "bibtotoc,plain"
+encoding "default"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

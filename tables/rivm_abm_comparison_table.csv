@@ -1,6 +1,0 @@
-Aspect,RIVM,ABM,Interpretation
-Number of distinct temporal patterns,Three clearly distinct epidemic trajectories,Three clusters but with similar timing,Real epidemic shows stronger temporal heterogeneity
-Timing of first epidemic peak,"Early, intermediate, and late peaks",Initial peak occurs at similar time across clusters,Model produces synchronised outbreak timing
-Variation in later waves,Substantial variation across municipalities,Differences mainly in magnitude of later waves,Model captures multiple waves but less variability
-Spatial concentration of clusters,Early clusters concentrated in urban regions,Clusters more spatially dispersed,Model produces weaker spatial organisation
-Evidence of hierarchical diffusion,Strong evidence of hierarchical diffusion,Weak evidence of hierarchical diffusion,Model partially reproduces spatial structure but not fully
